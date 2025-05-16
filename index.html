@@ -12,6 +12,8 @@
 </html><!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
   <meta charset="UTF-8">
   <title>Simple Calculator</title>
   <style>
@@ -98,6 +100,12 @@
     </div>
   </div>
 
+<df-messenger
+  intent="WELCOME"
+  chat-title="myself"
+  agent-id="617dfa5c-de46-43d0-a58f-2c5818ccb508"
+  language-code="en"
+></df-messenger>
   <script>
     function appendValue(val) {
       document.getElementById("result").value += val;
